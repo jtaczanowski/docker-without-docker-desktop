@@ -22,3 +22,13 @@ Instead of using docker dekstop use your own docker daemon on locally runing Vir
 
 #### Test your newly configured environment
 ```docker run hello-world```
+
+## Troubleshooting
+## macOS
+#### Problem with logging to remote docker registry.
+If you are experiencing error:
+
+``` Error saving credentials: error storing credentials - err: exec: "docker-credential-osxkeychain": executable file not found in $PATH, out:```
+
+then remove
+line with ```credsStore``` key from ~/.docker/config.json

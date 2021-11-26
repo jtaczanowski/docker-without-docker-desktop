@@ -1,7 +1,7 @@
 # docker-without-docker-desktop
-Use docker without docker dekstop.
+Use docker without docker desktop.
 
-Instead of using docker dekstop use your own docker daemon on locally runing Virtual Machine (Vagrant on Virtualbox).
+Instead of using docker desktop use your own docker daemon running on local Virtual Machine (Vagrant on Virtualbox).
 
 ## How to use
 ### macOS

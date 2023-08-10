@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    config.vm.box = "opensuse/Leap-15.5.x86_64"
+    config.vm.box = "opensuse/Tumbleweed.x86_64"
     config.vm.network "forwarded_port", guest: 2375, host: 2375
     config.vm.provision "shell", inline: <<-SHELL
       #zypper --non-interactive update

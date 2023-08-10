@@ -2,11 +2,9 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    config.vm.box = "opensuse/Leap-15.4.x86_64"
+    config.vm.box = "opensuse/Leap-15.5.x86_64"
     config.vm.network "forwarded_port", guest: 2375, host: 2375
     config.vm.provision "shell", inline: <<-SHELL
-      zypper --non-interactive addrepo https://download.opensuse.org/repositories/Virtualization:/containers/openSUSE_Leap_15.4/ containters
-      zypper --gpg-auto-import-keys refresh
       #zypper --non-interactive update
       zypper --non-interactive install --no-recommends docker
     

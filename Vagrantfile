@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     config.vm.network "forwarded_port", guest: 2375, host: 2375
     config.vm.provision "shell", inline: <<-SHELL
       #zypper --non-interactive update
-      zypper --non-interactive install --no-recommends docker
+      zypper --non-interactive install --no-recommends docker docker-compose docker-buildx
     
       usermod -G docker -a vagrant
   
